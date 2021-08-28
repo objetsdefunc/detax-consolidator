@@ -12,17 +12,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ReactiveUI;
 
 namespace Consolidator
 {
    /// <summary>
-   /// Interaction logic for MainWindow.xaml
+   /// Partial...
    /// </summary>
-   public partial class MainWindow : Window
+   public partial class MainWindow : ReactiveWindow<AppViewModel>
    {
-      public MainWindow()
-      {
-         InitializeComponent();
-      }
+      public MainWindow() => InitializeComponent();
    }
 }
